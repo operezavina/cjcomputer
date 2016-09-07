@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'web_service/index'
 
   get 'service/index'
+  get 'service/information'
 
   get 'about/index'
   

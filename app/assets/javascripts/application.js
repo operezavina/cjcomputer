@@ -14,13 +14,9 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require turbolinks
+//= require jquery.easing
+//= require layout.core
 //= require_tree .
+//= require grayscale
 
 
-
-//= require jquery.easing.js
-//= require bootstrap.js
-//= require grayscale.js
-//= require bootstrap.min.js
-//= require CloudZoom.js
-//= require jquery.js

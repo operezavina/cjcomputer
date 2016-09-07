@@ -1,6 +1,39 @@
  <section id="contact3" class="container content-section text-center">
- <div class="row">
- <div class="col-lg-8 col-lg-offset-2">
+ <div class="col-lg-offset-1 row">
+ <div class="col-md-6">
+   <h3>Contact information </h3>
+  <div class="form-group row">
+     <strong><label class="col-sm-2 form-control-label">Manager: </label></strong>
+    <div class="col-sm-10">
+     <label class="form-control-label">Jorge Henderson</label>
+    </div>
+  </div>
+   <div class="form-group row">
+    <label class="col-sm-2 form-control-label">Company Name: </label>
+    <div class="col-sm-10">
+     <label class="form-control-label">CJ Computer</label>  
+    </div>
+  </div>
+   <div class="form-group row">
+    <label class="col-sm-2 form-control-label">Address: </label>   
+    <div class="col-sm-10">
+      <label class="form-control-label">2651 Sunset Blvd Rocklin CA</label>  
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 form-control-label">Phone: </label>  
+    <div class="col-sm-10">
+     <label class="form-control-label"></label>
+    </div>
+  </div>
+  <div >
+    <label for="inputPassword" class="col-sm-2 form-control-label">Email: </label>  
+    <div class="col-sm-10">
+   
+    </div>
+  </div>
+ </div> 
+ <div class="col-md-6">
  <h2>Contact Form</h2>
  <%= form_for(@contact) do |f| %>
   <% if @contact.errors.any? %>
@@ -14,7 +47,7 @@
       </ul>
     </div>
   <% end %>
-
+ 
   <div class="form-group row">
     <label for="nameField" class="col-sm-2 form-control-label"><%= f.label :name,:for=>"nameField" %></label>
     <div class="col-sm-10">
@@ -46,11 +79,14 @@
     </div>
   </div>
   <div class="form-group row">
-    <div class="col-sm-10">  
-    <%= f.submit 'Send meessage',class: 'btn btn-default btn-lg' %>
+    <div class="col-sm-offset-2 col-sm-10">  
+    <%= f.submit 'Send message', class: 'btn btn-default btn-lg' %>
     </div>
   </div>
 <% end %>
  </div>
+ <!-- Map Section -->
+<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+<iframe class="image-center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3109.8007886784267!2d-121.26010768465272!3d38.79120097958714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809b1f5e96618107%3A0x1a15c3b5e22e007!2s2651+Sunset+Blvd%2C+Rocklin%2C+CA+95677!5e0!3m2!1sen!2sus!4v1469467982376" width="90%" height="350"  frameborder="0" style="border:0" allowfullscreen></iframe>
  </div>
  </section>

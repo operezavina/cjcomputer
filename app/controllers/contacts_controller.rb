@@ -33,6 +33,17 @@ class ContactsController < ApplicationController
   # POST /contacts.json
   def create
     @contact = Contact.new(contact_params)
+    @contact.request = request
+    if @contact.deliver
+      flash.now[:notice] = 'Thank you for your message. We will contact you soon!'
+    else
+      flash.now[:error] = 'Cannot send message.'
+      render :new
+    end
+  end
+  
+  def createdl
+    @contact = Contact.new(contact_params)
 
     respond_to do |format|
       if @contact.save
